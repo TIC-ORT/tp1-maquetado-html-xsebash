@@ -88,3 +88,41 @@ body {
 .amarillo .caja-interior {
   background-color: #ffd787;
 }
+footer {
+  background-color: #e6e6e6;
+  padding: 40px 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.columna-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-titulo {
+  background-color: #b3b3b3;
+  height: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.footer-texto {
+  background-color: white;
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+.footer-texto.corto {
+  width: 60%;
+}
