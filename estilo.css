@@ -1,31 +1,29 @@
 
 body {
     background-color: #fff;
-}
-header {
-  background-color: #ffd787; 
-  padding: 40px 0;
+}header {
+  background-color: #ffd787;
+  padding: 40px 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
-
 
 .imagen {
   width: 200px;
   height: 200px;
   background-color: #ffbe55;
   margin-right: 40px;
+  flex-shrink: 0;
 }
 
 .texto-header {
   flex: 1;
-  min-width: 300px;
+  max-width: 600px;
   background-color: transparent;
-  padding: 0; 
+  padding: 0;
 }
-
 
 .texto-header h1 {
   background-color: #ffbe55;
@@ -34,13 +32,59 @@ header {
   margin-bottom: 20px;
 }
 
-
 .texto-header p {
   background-color: white;
-  height: 15px;
+  height: 30px;
   margin-bottom: 15px;
   width: 100%;
-  padding: 10px;
-  color: transparent;
 }
 
+.cajas-medio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.caja {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.caja-interior {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+
+
+.azul {
+  background-color: #a8e1e6;
+}
+
+.azul .caja-interior {
+  background-color: #7dd3d8;
+}
+
+.naranja {
+  background-color: #f9a08c;
+}
+
+.naranja .caja-interior {
+  background-color: #f47c65;
+}
+
+.amarillo {
+  background-color: #ffe0a3;
+}
+
+.amarillo .caja-interior {
+  background-color: #ffd787;
+}
