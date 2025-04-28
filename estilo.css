@@ -1,5 +1,46 @@
-div arriba {
-    height: 200px;
-    width: 50%;
-    background-color: orange;
-  }
+
+body {
+    background-color: #fff;
+}
+header {
+  background-color: #ffd787; 
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.imagen {
+  width: 200px;
+  height: 200px;
+  background-color: #ffbe55;
+  margin-right: 40px;
+}
+
+.texto-header {
+  flex: 1;
+  min-width: 300px;
+  background-color: transparent;
+  padding: 0; 
+}
+
+
+.texto-header h1 {
+  background-color: #ffbe55;
+  height: 30px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+
+.texto-header p {
+  background-color: white;
+  height: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  color: transparent;
+}
+
